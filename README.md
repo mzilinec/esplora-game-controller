@@ -12,7 +12,7 @@ The application consists of two parts: the Arduino code and a configuration tool
 Compile src/ to an Arduino binary and conf-tool/ to a Windows binary.
 
 
-It may not fit into Arduino's memory if compiled from Arduino IDE, I believe I used [https://github.com/Robot-Will/Stino](Stino) with ```g++ -Os``` to make the binary smaller.
+It may not fit into Arduino's memory if compiled from Arduino IDE, I believe I used [Stino](https://github.com/Robot-Will/Stino) with ```g++ -Os``` to make the binary smaller.
 I'll try to provide a Makefile in the future.
 Also ensure you have an SD card plugged in the Esplora.
 
@@ -28,7 +28,7 @@ accepts these commands: `get`, `set`, `defaults`, `exit`.
 - `get` prints the current value,
 - `defaults` resets everything.
 
-**Possible config keys/values: ( "|" means "or" )**
+**Possible config keys/values:** ( "|" means "or" )
 - (buttons|joystick).mapping (gamepad|joystick|keyboard|mouse)
 - (buttons|joystick).keys [KEY_1] [KEY_2] [KEY_3] [KEY_4] - see scancodes.txt
 - buttons.repeat_rate [float], default: 10.0
@@ -42,5 +42,5 @@ accepts these commands: `get`, `set`, `defaults`, `exit`.
 
 
 ## License
-Made as a semestral project for course BI-ARD at [https://fit.cvut.cz/en](FIT CTU) in 2017.
+Made as a semestral project for course BI-ARD at [FIT CTU](https://fit.cvut.cz/en) in 2017.
 Licensed under MIT license.
